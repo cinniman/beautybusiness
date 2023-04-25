@@ -224,7 +224,7 @@ input {
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
-    background-color: var(--body-color);
+    background-color: #000;
     top: 0;
     right: -100%;
     width: 70%;
@@ -242,13 +242,13 @@ input {
 }
 
 .nav__link {
-  color: var(--text-color-light);
+  color: #e61f93;
   font-weight: var(--font-semi-bold);
   text-transform: uppercase;
 }
 
 .nav__link:hover {
-  color: var(--text-color);
+  color: #e61f93;
 }
 
 .nav__close {
@@ -256,7 +256,7 @@ input {
   top: .75rem;
   right: 1rem;
   font-size: 1.5rem;
-  color: var(--title-color);
+  color: #e61f93;
   cursor: pointer;
 }
 
@@ -267,13 +267,13 @@ input {
 
 /* Change background header */
 .scroll-header {
-  background-color: var(--body-color);
+  background-color: #000;
   box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
 }
 
 .scroll-header .nav__logo,
 .scroll-header .nav__toggle {
-  color: var(--title-color);
+  color: #e61f93;
 }
 
 /* Active link */
@@ -285,7 +285,7 @@ input {
 .active-link::before {
   content: '';
   position: absolute;
-  background-color: var(--title-color);
+  background-color: #e61f93;
   width: 100%;
   height: 2px;
   bottom: -.75rem;
@@ -341,7 +341,7 @@ input {
 }
 
 .home__info {
-  background-color: var(--first-color);
+  background-color: #e61f93;
   display: flex;
   padding: 1.5rem 1rem;
   align-items: center;
@@ -379,7 +379,7 @@ input {
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: #e61f93;
   color: var(--white-color);
   padding: 1rem 2rem;
   font-weight: var(--font-semi-bold);
@@ -387,7 +387,7 @@ input {
 }
 
 .button:hover {
-  background-color: var(--first-color-alt);
+  background-color: #000;
 }
 
 .button--flex {
@@ -593,7 +593,7 @@ input {
 }
 
 .place__content, .place__title {
-  color: var(--white-color);
+  color: #000;
 }
 
 .place__content {
@@ -646,13 +646,13 @@ input {
 
 /*=============== SUBSCRIBE ===============*/
 .subscribe__bg {
-  background-color: var(--first-color-second);
+  background-color: #fff;
   padding: 2.5rem 0;
 }
 
 .subscribe__title, 
 .subscribe__description {
-  color: var(--white-color);
+  color: #e61f93;
 }
 
 .subscribe__description {
@@ -671,11 +671,11 @@ input {
   width: 70%;
   padding-right: .5rem;
   background-color: var(--input-color);
-  color: var(--text-color);
+  color: #e61f93;
 }
 
 .subscribe__input::placeholder {
-  color: var(--text-color);
+  color: #e61f93;
 }
 
 
@@ -838,7 +838,7 @@ input {
     height: calc(var(--header-height) + 1.5rem);
   }
   .nav__link {
-    color: var(--white-color);
+    color: #e61f93;
     text-transform: initial;
   }
   .nav__link:hover {
@@ -862,22 +862,22 @@ input {
     display: none;
   }
   .change-theme {
-    color: var(--white-color);
+    color: #e61f93;
   }
   .active-link::before {
     background-color: var(--white-color);
   }
   .scroll-header .nav__link {
-    color: var(--text-color);
+    color: #e61f93;
   }
   .scroll-header .active-link {
-    color: var(--title-color);
+    color: #fff;
   }
   .scroll-header .active-link::before {
-    background-color: var(--title-color);
+    background-color: #e61f93;
   }
   .scroll-header .change-theme {
-    color: var(--text-color);
+    color: #e61f93;
   }
   .section {
     padding: 7rem 0 2rem;
@@ -932,7 +932,7 @@ input {
     padding: 0;
   }
   .subscribe__container {
-    background-color: var(--first-color-second);
+    background-color: #add8e6;
     padding: 3.5rem 0;
   }
   .subscribe__input {
