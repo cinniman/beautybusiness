@@ -73,12 +73,12 @@
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   --first-color-second: hsl(var(--hue-color), 54%, 12%);
-  --title-color: hsl(var(--hue-color), 24%, 95%);
-  --text-color: hsl(var(--hue-color), 8%, 75%);
-  --input-color: hsl(var(--hue-color), 29%, 16%);
-  --body-color: hsl(var(--hue-color), 29%, 12%);
-  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
-  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+  --title-color: hsl(#e61f93, 24%, 95%);
+  --text-color: hsl(#000000, 8%, 75%);
+  --input-color: hsl(#000000, 29%, 16%);
+  --body-color: hsl(#add8e6, 29%, 12%);
+  --scroll-bar-color: hsl(#e61f93, 12%, 48%);
+  --scroll-thumb-color: hsl(#e61f93, 12%, 36%);
 }
 
 /*========== Button Dark/Light ==========*/
