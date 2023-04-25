@@ -92,7 +92,7 @@ body.dark-theme {
 }
 
 .change-theme, .change-theme-name {
-  color: var(--text-color);
+  color: #e61f93;
 }
 
 .change-theme {
@@ -119,12 +119,12 @@ body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--body-color);
-  color: var(--text-color);
+  background-color: #000000;
+  color: #add8e6;
 }
 
 h1, h2, h3 {
-  color: var(--title-color);
+  color: #e61f93;
   font-weight: var(--font-semi-bold);
   font-family: var(--title-font);
 }
@@ -169,7 +169,7 @@ input {
 
 .section__title {
   font-size: var(--h2-font-size);
-  color: var(--title-color);
+  color: #e61f93;
   text-align: center;
   text-transform: capitalize;
   margin-bottom: var(--mb-2);
@@ -703,7 +703,7 @@ input {
 
 .footer__social {
   font-size: 1.25rem;
-  color: var(--title-color);
+  color: #add8e6;
   margin-right: var(--mb-1-25);
 }
 
@@ -716,11 +716,11 @@ input {
 }
 
 .footer__link {
-  color: var(--text-color);
+  color: #add8e6;
 }
 
 .footer__link:hover {
-  color: var(--title-color);
+  color: #add8e6;
 }
 
 .footer__rights {
@@ -742,7 +742,7 @@ input {
 }
 
 .footer__terms-link:hover {
-  color: var(--text-color);
+  color: #fff;
 }
 
 /*========== SCROLL UP ==========*/
