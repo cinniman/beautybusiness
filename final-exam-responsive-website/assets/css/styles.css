@@ -11,21 +11,21 @@
   --hue-color: 190;
 
   /* HSL color mode */
-  --first-color: hsl(var(--hue-color), 64%, 22%);
-  --first-color-second: hsl(var(--hue-color), 64%, 22%);
-  --first-color-alt: hsl(var(--hue-color), 64%, 15%);
-  --title-color: hsl(var(--hue-color), 64%, 18%);
-  --text-color: hsl(var(--hue-color), 24%, 35%);
-  --text-color-light: hsl(var(--hue-color), 8%, 60%);
+  --first-color: #e61f93;
+  --first-color-second: #e61f93;
+  --first-color-alt: #e61f93;
+  --title-color: #e61f93;
+  --text-color: #000;
+  --text-color-light: #add8e6;
   --input-color: hsl(var(--hue-color), 24%, 97%);
-  --body-color: hsl(var(--hue-color), 100%, 99%);
+  --body-color: #add8e6;
   --white-color: #FFF;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
 
   /*========== Font and typography ==========*/
-  --body-font: 'Open Sans', sans-serif;
-  --title-font: 'Raleway', sans-serif;
+  --body-font: 'Questrial', sans-serif;
+  --title-font: 'Oswald', sans-serif;
   --biggest-font-size: 2.5rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -72,13 +72,13 @@
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  --first-color-second: hsl(var(--hue-color), 54%, 12%);
-  --title-color: hsl(#e61f93, 24%, 95%);
-  --text-color: hsl(#000000, 8%, 75%);
-  --input-color: hsl(#000000, 29%, 16%);
-  --body-color: hsl(#add8e6, 29%, 12%);
-  --scroll-bar-color: hsl(#e61f93, 12%, 48%);
-  --scroll-thumb-color: hsl(#e61f93, 12%, 36%);
+  --first-color-second: #e61f93;
+  --title-color: #e61f93;
+  --text-color: #add8e6;
+  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --body-color: #000;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
 
 /*========== Button Dark/Light ==========*/
@@ -92,7 +92,7 @@ body.dark-theme {
 }
 
 .change-theme, .change-theme-name {
-  color: #e61f93;
+  color: var(--text-color);
 }
 
 .change-theme {
@@ -117,16 +117,16 @@ html {
 
 body {
   margin: var(--header-height) 0 0 0;
-  font-family: 'Questrial', sans-serif;
+  font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: #000000;
-  color: #add8e6;
+  background-color: var(--body-color);
+  color: var(--text-color);
 }
 
 h1, h2, h3 {
-  color: #e61f93;
+  color: var(--title-color);
   font-weight: var(--font-semi-bold);
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--title-font);
 }
 
 ul {
@@ -146,7 +146,7 @@ video {
 button,
 input {
   border: none;
-  font-family: 'Oswald', sans-serif;
+  font-family: var(--body-font);
   font-size: var(--normal-font-size);
 }
 
@@ -169,7 +169,7 @@ input {
 
 .section__title {
   font-size: var(--h2-font-size);
-  color: #e61f93;
+  color: var(--title-color);
   text-align: center;
   text-transform: capitalize;
   margin-bottom: var(--mb-2);
@@ -224,7 +224,7 @@ input {
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
-    background-color: #000;
+    background-color: var(--body-color);
     top: 0;
     right: -100%;
     width: 70%;
@@ -242,13 +242,13 @@ input {
 }
 
 .nav__link {
-  color: #e61f93;
+  color: var(--text-color-light);
   font-weight: var(--font-semi-bold);
   text-transform: uppercase;
 }
 
 .nav__link:hover {
-  color: #e61f93;
+  color: var(--text-color);
 }
 
 .nav__close {
@@ -256,7 +256,7 @@ input {
   top: .75rem;
   right: 1rem;
   font-size: 1.5rem;
-  color: #e61f93;
+  color: var(--title-color);
   cursor: pointer;
 }
 
@@ -267,13 +267,13 @@ input {
 
 /* Change background header */
 .scroll-header {
-  background-color: #000;
+  background-color: var(--body-color);
   box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
 }
 
 .scroll-header .nav__logo,
 .scroll-header .nav__toggle {
-  color: #e61f93;
+  color: var(--title-color);
 }
 
 /* Active link */
@@ -285,7 +285,7 @@ input {
 .active-link::before {
   content: '';
   position: absolute;
-  background-color: #e61f93;
+  background-color: var(--title-color);
   width: 100%;
   height: 2px;
   bottom: -.75rem;
@@ -341,7 +341,7 @@ input {
 }
 
 .home__info {
-  background-color: #e61f93;
+  background-color: var(--first-color);
   display: flex;
   padding: 1.5rem 1rem;
   align-items: center;
@@ -379,7 +379,7 @@ input {
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
-  background-color: #e61f93;
+  background-color: var(--first-color);
   color: var(--white-color);
   padding: 1rem 2rem;
   font-weight: var(--font-semi-bold);
@@ -387,7 +387,7 @@ input {
 }
 
 .button:hover {
-  background-color: #000;
+  background-color: var(--first-color-alt);
 }
 
 .button--flex {
@@ -555,7 +555,6 @@ input {
 
 .video__content {
   position: relative;
-  text-align: center;
 }
 
 .video__button {
@@ -593,7 +592,7 @@ input {
 }
 
 .place__content, .place__title {
-  color: #000;
+  color: var(--white-color);
 }
 
 .place__content {
@@ -646,13 +645,13 @@ input {
 
 /*=============== SUBSCRIBE ===============*/
 .subscribe__bg {
-  background-color: #fff;
+  background-color: var(--first-color-second);
   padding: 2.5rem 0;
 }
 
 .subscribe__title, 
 .subscribe__description {
-  color: #e61f93;
+  color: var(--white-color);
 }
 
 .subscribe__description {
@@ -671,11 +670,11 @@ input {
   width: 70%;
   padding-right: .5rem;
   background-color: var(--input-color);
-  color: #e61f93;
+  color: var(--text-color);
 }
 
 .subscribe__input::placeholder {
-  color: #e61f93;
+  color: var(--text-color);
 }
 
 
@@ -704,7 +703,7 @@ input {
 
 .footer__social {
   font-size: 1.25rem;
-  color: #add8e6;
+  color: var(--title-color);
   margin-right: var(--mb-1-25);
 }
 
@@ -717,11 +716,11 @@ input {
 }
 
 .footer__link {
-  color: #add8e6;
+  color: var(--text-color);
 }
 
 .footer__link:hover {
-  color: #add8e6;
+  color: var(--title-color);
 }
 
 .footer__rights {
@@ -743,7 +742,7 @@ input {
 }
 
 .footer__terms-link:hover {
-  color: #fff;
+  color: var(--text-color);
 }
 
 /*========== SCROLL UP ==========*/
@@ -838,7 +837,7 @@ input {
     height: calc(var(--header-height) + 1.5rem);
   }
   .nav__link {
-    color: #e61f93;
+    color: var(--white-color);
     text-transform: initial;
   }
   .nav__link:hover {
@@ -862,22 +861,22 @@ input {
     display: none;
   }
   .change-theme {
-    color: #e61f93;
+    color: var(--white-color);
   }
   .active-link::before {
     background-color: var(--white-color);
   }
   .scroll-header .nav__link {
-    color: #e61f93;
+    color: var(--text-color);
   }
   .scroll-header .active-link {
-    color: #fff;
+    color: var(--title-color);
   }
   .scroll-header .active-link::before {
-    background-color: #e61f93;
+    background-color: var(--title-color);
   }
   .scroll-header .change-theme {
-    color: #e61f93;
+    color: var(--text-color);
   }
   .section {
     padding: 7rem 0 2rem;
@@ -932,7 +931,7 @@ input {
     padding: 0;
   }
   .subscribe__container {
-    background-color: #add8e6;
+    background-color: var(--first-color-second);
     padding: 3.5rem 0;
   }
   .subscribe__input {
